@@ -8,7 +8,7 @@
 
 body
 {
-    background: #111;
+    background: #000;
     min-height: 100vh;
     width: 100vw;
     font-family: 'Courier New', Courier, monospace;
@@ -38,9 +38,10 @@ body::-webkit-scrollbar
     flex-direction: column;
 }
 
+
 #blob
 {
-    background: linear-gradient(rgba(255, 111, 0, 0.865),rgb(72, 0, 255));
+    background: linear-gradient(aqua, blue);
     height: 400px;
     width: 400px;
     position: absolute;
@@ -50,6 +51,7 @@ body::-webkit-scrollbar
     left: 50%;
     translate: -50% -50%;
 }
+
 
 @keyframes animate {
     0%
