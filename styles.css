@@ -53,6 +53,7 @@ body::-webkit-scrollbar
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+    z-index: 1;
 }
 
 @keyframes animate {
@@ -174,7 +175,8 @@ body::-webkit-scrollbar
 {
     color: transparent;
     font-size: 9rem;
-    -webkit-text-stroke: 5px #fff
+    -webkit-text-stroke: 5px #fff;
+    font-family: "Audiowide", sans-serif;
 }
 
 .intro h1 p:hover 

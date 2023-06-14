@@ -1,13 +1,27 @@
 const blob = document.querySelector("#blob");
+
 const blurr = document.querySelector("#blur");
-blurr.onmousemove=e=>{
+
+
+// blurr.onmousemove=e=>{
+//     const {clientX, clientY}=e;
+
+//     blob.animate({
+//         left: `${clientX}px`,
+//         top: `${clientY}px`
+// }, {duration: 50, fill: "forwards" });
+// }
+
+
+blurr.addEventListener('mousemove', e=>{
     const {clientX, clientY}=e;
 
     blob.animate({
         left: `${clientX}px`,
         top: `${clientY}px`
 }, {duration: 50, fill: "forwards" });
-}
+})
+
 
 
 
@@ -16,6 +30,7 @@ gsap.from('.logo', 1.5, {
     x: innerWidth,
     ease: Expo.easeOut,
 })
+
 
 gsap.from('.links a', .8, {
     x:-900,
