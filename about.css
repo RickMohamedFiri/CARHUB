@@ -166,6 +166,8 @@ body::-webkit-scrollbar
 .p p
 {
     text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .cards
@@ -180,7 +182,8 @@ body::-webkit-scrollbar
 .card
 {
     aspect-ratio: 1 / 1.3;
-    border: .5vmin solid #d400ff;
+    border-radius: .5rem;
+    border: .5vmin solid aqua;
     cursor: pointer;
     position: relative;
     width: 66vmin;
@@ -205,7 +208,7 @@ body::-webkit-scrollbar
         rgba(255, 255, 255, 0.25) 8%,
         transparent 8%
     );
-    background-position: 0% 0%;
+    /* background-position: 0% 0%; */
     background-size: 5vmin 5vmin;
     height: 100%;
     width: 100%;
@@ -226,10 +229,11 @@ body::-webkit-scrollbar
 
 .card-content p
 {
-    color: #05f7ef;
+    color: #00d9ff;
     position: relative;
     opacity: 1;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     transition: 1s ease;
 }
 
